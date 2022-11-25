@@ -33,7 +33,7 @@ We are going to build out a lab using Terraform. The lab will include the follow
 ### Schematic
 Below is a high-level visual overview of what we are going to deploy into Azure.
 
-<img src="https://github.com/anthonymashford/Events/blob/main/FestiveTechCalendar2022/TF-Deploy%20ANF%20using%20Terraform/images/TerraformLab-FTC2022.png">
+<img src="https://github.com/anthonymashford/FestiveTechCalendar2022/blob/main/TF-Deploy%20ANF%20using%20Terraform/images/TerraformLab-FTC2022.png">
 
 ### Deploying the Lab
 Next, we will go through the steps required to deploy the ANF Lab using Terraform and the code in this repo.
