@@ -4,7 +4,7 @@
 The Festive Tech Calendar is a technical community initiative geared towards sharing information. Throughput December there will be lots of new content published from people all over the globe.
 
 ### Supporting the Missing People Charity
-This year the Festive Tech Calendar Team are raising money for the charity **[missingpeople](https://www.missingpeople.org.uk/)**. We believe its important to support charities who do great work. Without fundraising Missing People wouldn’t be able to find vulnerable missing people and reunite families. Please, if you can, donate to this very worthy cause.
+This year the **Festive Tech Calendar Team** are raising money for the charity **[missingpeople](https://www.missingpeople.org.uk/)**. We believe its important to support charities who do great work. Without fundraising, Missing People would not be able to help find vulnerable, missing people, and reunite them with their families. Please, if you can, donate to this very worthy cause.
 
 ### Prerequisites - What do you need?
 Below is a list of things you will need to complete this lab.
