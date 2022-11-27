@@ -40,8 +40,24 @@ Next, we will go through the steps required to deploy the ANF Lab using Terrafor
 
 1. Clone the FestiveTechCalendar2022 repo onto your system
 2. Open yout Terminal and browse to the directory where you downloaded the Terraform files
-3. Type the command `terraform init`. This will initialise the working directory
-4. Type the command `terraform plan`. This will create a execution plan. The plan will allow you to visualise your IaC deployment
-5. Type the command `terraform apply`. This command will execute the actions as defined as part of the 'plan' in the previous step
-8. Once Terraform has completed its checks, you will be prompted to type `yes` to continue. If you would like to suppress this request to continue. type the command `terraform apply --auto-approve`
-9. Terraform will now start to deploy your code to Azure.
+3. Log in your Azure subscription. Type the command `az login`
+4. If you are working with multiple subscription. Make sure the subscription you wish to use it set to `IsDefault` `true`. You can check this by running the following command `az account list -o table`. If you need to change the default subscription then run the follwing command. `az account set --subscription "Your Subdscription Name"`
+5. Next you need to initialise the Terraform working directory. 
+4. Type the command `terraform init`
+5. Create an execution plan. The plan will allow you to visualise your Terraform IaC deployment. 
+6. Type the command `terraform plan`
+7. Deploy, to execute the actions as defined as part of the 'plan' in the previous step. 
+8. Type the command `terraform apply`
+9. Once Terraform has completed its checks, you will be prompted to type `yes` to continue. **Note:** If you would like to suppress this request to continue, use the command `terraform apply --auto-approve`
+10. Terraform will now start to deploy your code to Azure.
+
+### Destroying the Lab
+Once you have finished with your lab, you can easily remove the resources you have depoyed to Azure. Terraform uses a tfstate file when it deploys. Provising you have not made any changes to your lab, Terraform will use this tfstate file to remove all resources.
+
+1. Type the command `terraform destroy`
+2. Once Terraform has completed its checks, you will be prompted to type `yes` to continue. **Note:** If you would like to suppress this request to continue, use the command `terraform destroy --auto-approve`
+
+### Summary
+Thats it, you have now successfully deploy resources into Azure using Terraform.
+ 
+I do hope this basic lab of deploying Azure NetApp Files with Terraform has been useful. Chck out my other repo's for more Terraform examples.
