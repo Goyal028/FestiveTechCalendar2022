@@ -38,13 +38,10 @@ Below is a high-level visual overview of what we are going to deploy into Azure.
 ### Deploying the Lab
 Next, we will go through the steps required to deploy the ANF Lab using Terraform and the code in this repo.
 
-1. Clone the FestiveTechCalendar2022 repo onto your system.
-2. Browse to the directory that you downloaded the Terraform files into
-3. We need to initialise the directory. This will get the Terraform modules  requried to support your deployment
-4. Type the command `terraform init` 
-5. We now need to generate the Terraform Plan, this will be used to understand what Terraform needs to deploy.
-6. Type the command `terraform plan`
-7. Once you have the Terraform plan created, you are now good to go and deploy your code to Azure.
-8. Type the command `terraform apply`
-9. Once Terra form has completed its checks, you will be prompted to type `yes` to continue. If you would like to suppress this request to continue. type the command `terraform apply --auto-approve`
-10. Terraform will now start to deploy your code to Azure.
+1. Clone the FestiveTechCalendar2022 repo onto your system
+2. Open yout Terminal and browse to the directory where you downloaded the Terraform files
+3. Type the command `terraform init`. This will initialise the working directory
+4. Type the command `terraform plan`. This will create a execution plan. The plan will allow you to visualise your IaC deployment
+5. Type the command `terraform apply`. This command will execute the actions as defined as part of the 'plan' in the previous step
+8. Once Terraform has completed its checks, you will be prompted to type `yes` to continue. If you would like to suppress this request to continue. type the command `terraform apply --auto-approve`
+9. Terraform will now start to deploy your code to Azure.

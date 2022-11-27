@@ -235,3 +235,8 @@ variable "protocol_nfs" {
   description = "Volume Protocol"
   default     = ""
 }
+
+variable "vol_size" {
+  description = "Volume Size"
+  default     = ""
+}

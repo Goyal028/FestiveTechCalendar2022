@@ -14,7 +14,7 @@ resource "azurerm_netapp_volume" "anf_nfs_vol_1" {
   subnet_id           = azurerm_subnet.vnet_1_snet_2.id
   network_features    = "Standard"
   protocols           = [var.protocol_nfs]
-  storage_quota_in_gb = 1024
+  storage_quota_in_gb = var.vol_size
 
   export_policy_rule {
     rule_index          = 1
@@ -48,7 +48,7 @@ resource "azurerm_netapp_volume" "anf_nfs_vol_2" {
   subnet_id           = azurerm_subnet.vnet_2_snet_2.id
   network_features    = "Standard"
   protocols           = [var.protocol_nfs]
-  storage_quota_in_gb = 1024
+  storage_quota_in_gb = var.vol_size
 
   export_policy_rule {
     rule_index          = 1
