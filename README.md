@@ -52,7 +52,7 @@ Next, we will go through the steps required to deploy the ANF Lab using Terrafor
 10. Terraform will now start to deploy your code to Azure.
 
 ### Destroying the Lab
-Once you have finished with your lab, you can easily remove the resources you have depoyed to Azure. Terraform uses a tfstate file when it deploys. Provising you have not made any changes to your lab, Terraform will use this tfstate file to remove all resources.
+Once you have finished with your lab, you are going to want to remove the resources, afterall they do cost money! Terraform uses a **tfstate** file when it deploys. Providing you have not made any changes to your lab, Terraform will use this **tfstate** file to remove all resources.
 
 1. Type the command `terraform destroy`
 2. Once Terraform has completed its checks, you will be prompted to type `yes` to continue. **Note:** If you would like to suppress this request to continue, use the command `terraform destroy --auto-approve`
