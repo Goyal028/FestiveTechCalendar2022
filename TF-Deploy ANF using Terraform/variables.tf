@@ -240,3 +240,8 @@ variable "vol_size" {
   description = "Volume Size"
   default     = ""
 }
+
+variable "service_tier" {
+  description = "Volume SErvice Tier"
+  default     = ""
+}

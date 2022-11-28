@@ -5,11 +5,6 @@ data "http" "clientip" {
 
 # Create Network Security Group Region 1
 resource "azurerm_network_security_group" "nsg_1" {
-  /* depends_on = [azurerm_windows_virtual_machine.vm1,
-    azurerm_windows_virtual_machine.vm2,
-    azurerm_linux_virtual_machine.vm3,
-    azurerm_linux_virtual_machine.vm4
-  ] */
   name                = "nsg-${var.vnet_1}-${var.snet_1}-${random_string.random_1.result}"
   location            = var.region_1
   resource_group_name = azurerm_resource_group.rg_1.name
@@ -48,11 +43,6 @@ resource "azurerm_network_security_group" "nsg_1" {
 
 # Create Network Security Group Region 2
 resource "azurerm_network_security_group" "nsg_2" {
-  /* depends_on = [azurerm_windows_virtual_machine.vm1,
-    azurerm_windows_virtual_machine.vm2,
-    azurerm_linux_virtual_machine.vm3,
-    azurerm_linux_virtual_machine.vm4
-  ] */
   name                = "nsg-${var.vnet_2}-${var.snet_1}-${random_string.random_2.result}"
   location            = var.region_2
   resource_group_name = azurerm_resource_group.rg_2.name
